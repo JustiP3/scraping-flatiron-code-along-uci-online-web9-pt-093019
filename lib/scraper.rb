@@ -32,6 +32,7 @@ class Scraper
       course = Course.new
       course.title = name
       courses_array << course
+      binding.pry
     end
     courses_array
   end
