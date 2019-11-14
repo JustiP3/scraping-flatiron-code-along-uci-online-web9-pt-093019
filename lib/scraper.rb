@@ -28,10 +28,11 @@ class Scraper
   def make_courses
     courses_array = []
     self.get_courses.each do |course|
-        binding.pry
+        #binding.pry
       name = course.text
       course = Course.new
       course.title = name
+      coures.schedule = " "
       courses_array << course
 
     end
