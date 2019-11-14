@@ -35,14 +35,13 @@ class Scraper
 
   def make_courses
     courses_array = []
-    self.get_courses.each do |course|
-        #binding.pry
-      name = course.text
-      course = Course.new
-      course.title = name
-      coures.schedule = " "
-      courses_array << course
-
+    i = 0
+    while i < self.get_courses.length
+      courses_array << Course.new
+      courses_array[i].title = self.get_courses[i].text
+      courses_array[i].schedule = self.get_schedules[i].text
+      courses_array[i].description = self.get_descriptions[i].text
+      i += 1
     end
     courses_array
   end
