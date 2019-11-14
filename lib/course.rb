@@ -10,4 +10,8 @@ class Course
     self.all
   end
 
+  def self.reset_all 
+    @@all.delete_if {|x| true}
+  end 
+
 end
