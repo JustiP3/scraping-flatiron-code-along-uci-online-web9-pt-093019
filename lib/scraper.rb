@@ -24,6 +24,7 @@ class Scraper
   def get_courses
     courses_noko = self.get_page.css(".post h2")
     courses_array = []
+    courses_noko.each {|course| courses_array << course.text}
   end
 
 end
