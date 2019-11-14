@@ -22,7 +22,7 @@ class Scraper
   end
 
   def get_courses
-    courses_noko = self.get_page.css(".post h2")
+    courses_noko = self.get_page.css(".post")
   end
 
   def make_courses
