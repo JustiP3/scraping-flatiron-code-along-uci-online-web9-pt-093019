@@ -23,7 +23,7 @@ class Scraper
 
   def get_courses
     titles = self.get_page.css(".post h2")
-    b = self.get_page.css(".date")
+    b = self.get_page.css(".post .date")
     binding.pry
   end
 
