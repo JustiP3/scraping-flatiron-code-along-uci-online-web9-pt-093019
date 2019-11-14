@@ -27,7 +27,12 @@ class Scraper
 
   def make_courses
     courses_array = []
-    self.get_courses.each {|course| courses_array << course.text}
+    self.get_courses.each do |course|
+      name = course.text
+      course = Course.new 
+      course.title = name  
+      courses_array << course
+    end 
     courses_array
   end
 
