@@ -29,10 +29,10 @@ class Scraper
     courses_array = []
     self.get_courses.each do |course|
       name = course.text
-      course = Course.new 
-      course.title = name  
+      course = Course.new
+      course.title = name
       courses_array << course
-    end 
+    end
     courses_array
   end
 
