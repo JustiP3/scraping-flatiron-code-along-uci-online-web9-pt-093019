@@ -23,6 +23,7 @@ class Scraper
 
   def get_courses
     courses_noko = self.get_page.css(".post")
+    binding.pry
   end
 
   def make_courses
