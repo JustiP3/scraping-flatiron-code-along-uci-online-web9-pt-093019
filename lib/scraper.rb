@@ -22,8 +22,8 @@ class Scraper
   end
 
   def get_courses
-    a=self.get_page.css(".post h2")
-    binding.pry
+    courses_noko = self.get_page.css(".post h2")
+    courses_array = []
   end
 
 end
